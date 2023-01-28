@@ -62,15 +62,14 @@ function check()
         }
     }
     if(question_turn == "player1")
-    {
-        question_turn = "player2";
-        document.getElementById("player_question").innerHTML = "Question Turn - " + player2_name;
+    { question_turn = "player2"; 
+     document.getElementById("player_question").innerHTML = "Question Turn - " + player2_name ;
+    } 
+    else 
+    { question_turn = "player1";
+     document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name ; 
     }
-    else
-    {
-        question_turn = "player1";
-        document.getElementById("player_question").innerHTML = "Question Turn - " + player1_name;
-    }
+
 
     if(answer_turn == "player1")
     {
